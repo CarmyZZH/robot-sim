@@ -1,0 +1,86 @@
+# Repository allowlist: source, documentation, and robot simulation assets only.
+/*
+
+# Root project files
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/*.md
+!/requirements.txt
+!/environment.yml
+!/pyproject.toml
+!/setup.cfg
+!/LICENSE*
+
+# Python source
+!/src/
+/src/**
+!/src/**/
+!/src/**/*.py
+
+!/scripts/
+/scripts/**
+!/scripts/**/
+!/scripts/**/*.py
+
+!/tests/
+/tests/**
+!/tests/**/
+!/tests/**/*.py
+
+# Research notes
+!/notebooks/
+/notebooks/**
+!/notebooks/*.ipynb
+
+# Private robot assets and research data stay local. Only the placeholder is public.
+!/data/
+/data/**
+!/data/README.md
+
+# Secrets and machine-local configuration
+.env*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secrets*
+.idea/
+.vscode/
+.sisyphus/
+.opencode/
+
+# Python and tool caches
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local runtime state
+.venv/
+venv/
+env/
+*.log
+
+# Private/generated research artifacts
+experiments/
+data/collected_datasets/
+data/test_results/
+data/my_robot/
+checkpoints/
+runs/
+outputs/
+*.npy
+*.npz
+*.csv
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# OS files
+.DS_Store
+Thumbs.db
