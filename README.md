@@ -260,7 +260,8 @@ python -m unittest discover -s tests -v
 ```
 
 They currently verify the seven-node morphology graph contract, graph-to-robot
-joint ordering, and full/lite model output interfaces.
+joint ordering, full/lite model output interfaces, and notebook hygiene. The
+notebook check prevents committed execution counts and embedded outputs.
 
 ## Research Roadmap
 
